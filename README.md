@@ -6,6 +6,14 @@
 
 </h1>
 
+| Autor | Data |
+| -- | -- |
+| Carlos Oliveira | 09/10/2021|
+| Versão | 1.0 |
+
+## Escopo
+Este material abrange a estratégia de 6 R's levando-se em consideração uma migração para o **Microsoft Azure**. As informações aqui apresentadas podem se aplicar para outros provedores de cloud, em alguns casos. 
+
 ## Rehost
 
 A Estratégia de Rehost, também conhecida como Lift-and-Shift consiste em replicar os servidores selecionados para o ambiente de destino de forma a **agilizar** e **facilitar** o processo de migração. Esta é a estratégia mais comum e a que traz resultados mais rápidos por se tratar de um processo de baixo risco e rápido retorno.
@@ -22,10 +30,9 @@ Algumas premissas são exigidas para que a estratégia de rehosting seja conside
 Em linhas gerais esta é a primeira abordagem utilizada quando encontramos sistemas operacionais compatíveis com as ferramentas de migração.
 
 Para um informativo completo de todos os requisitos necessários para Rehosting, é possível consultar as seguintes referências técnicas:
- * Máquinas virtuais Hyper-V:
- * Máquinas virtuais em VmWare: 
- * Máquinas físicas: 
- * Máquinas virtuais em outras nuvens ou sem acesso ao virtualizador  
+ * [**Máquinas virtuais Hyper-V**](https://docs.microsoft.com/en-us/azure/migrate/migrate-support-matrix-hyper-v-migration)
+ * [**Máquinas virtuais em VMware**](https://docs.microsoft.com/en-us/azure/migrate/migrate-support-matrix-vmware-migration)
+ * [**Quaisquer outros cenários de migração conforme especificados na documentação**](https://docs.microsoft.com/en-us/azure/migrate/migrate-support-matrix-physical-migration) 
 
 ## Replatform
 A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas particularidades exigem que esta estratégia seja adotada. Um servidor sem um sistema operacional suportado, por exemplo, pode se encaixar nesta estratégia. O approach de migração neste caso é preparar uma instância virtual na nuvem pública e realizar uma migração individualiada dos dados. 
