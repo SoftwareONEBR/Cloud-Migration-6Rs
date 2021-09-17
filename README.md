@@ -16,16 +16,21 @@ Este material abrange a estratégia de 6 R's levando-se em consideração uma mi
 
 ## Rehost
 
-A Estratégia de Rehost, também conhecida como Lift-and-Shift consiste em replicar os servidores selecionados para o ambiente de destino de forma a **agilizar** e **facilitar** o processo de migração. Esta é a estratégia mais comum e a que traz resultados mais rápidos por se tratar de um processo de baixo risco e rápido retorno.
+A Estratégia de Rehost, também conhecida como Lift-and-Shift, consiste em replicar os servidores selecionados para o ambiente de destino de forma a **agilizar** e **facilitar** o processo de migração. Esta é a estratégia mais comum e a que traz resultados mais rápidos por se tratar de um processo de baixo risco e rápido retorno.
 
-Algumas premissas são exigidas para que a estratégia de rehosting seja considerada. Para estar elegível a estratégia de *rehosting*, o servidor deve:
+### Aplicação do Rehost em Azure
 
- * Possuir um sistema operacional suportado
+Algumas premissas são exigidas para que a estratégia de rehosting seja considerada em um ambiente Azure. Para estar elegível à estratégia de *rehosting*, o servidor deve:
+
+ * Possuir um sistema operacional suportado pela nuvem Azure.
 > Exemplo: Windows Server 2012 R2, 2016 ou mesmo um Ubuntu são exemplos de servidores suportados para replicação.
- * Possuir um dimensionamento de disco suportado
+ * Possuir um dimensionamento de disco suportado pela nuvem Azure.
 > Exemplo: Disco de sistema operacional de até 2TB, sem dualboot, com tipo de inicialização em BIOS.
- * Possuir uma configuração de placas de rede suportada pela ferramenta de migração
- * Possuir uma função suportada
+ * Possuir uma configuração de placas de rede suportada pela ferramenta de migração e pela nuvem Azure.
+ > Exemplo: IPv6 não suportado
+ * Possuir quantidades de disco rígido suportadas pela nuvem Azure.
+ > Exemplo: Até 63 discos por máquina.
+ * Possuir uma função suportada.
 
 Em linhas gerais esta é a primeira abordagem utilizada quando encontramos sistemas operacionais compatíveis com as ferramentas de migração.
 
