@@ -35,7 +35,7 @@ Para um informativo completo de todos os requisitos necessários para Rehosting,
  * [**Quaisquer outros cenários de migração conforme especificados na documentação**](https://docs.microsoft.com/en-us/azure/migrate/migrate-support-matrix-physical-migration) 
 
 ## Replatform
-A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas particularidades exigem que esta estratégia seja adotada. Um servidor sem um sistema operacional suportado, por exemplo, pode se encaixar nesta estratégia. O approach de migração neste caso é preparar uma instância virtual na nuvem pública e realizar uma migração individualiada dos dados. 
+A estratégia de **Replatform** é similar ao *lift-and-shift*, porém algumas particularidades exigem que esta estratégia seja adotada. Um servidor sem um sistema operacional suportado, por exemplo, pode se encaixar nesta estratégia. O approach de migração neste caso é preparar uma instância virtual na nuvem pública e realizar uma migração individualiada dos dados. 
 > ### Exemplo
 > 
 > Uma stack possui 3 servidores Web atrás de um Load Balancer e 2 Bancos de dados Mysql com replicação. O servidor MySQL está rodando e uma CentOS 4.x enquanto o servidor Web é um Servidor Ubuntu 14.04-LTS. 
@@ -59,6 +59,9 @@ Are you looking to migrate from a monolithic architecture to a service-oriented 
 Quando um servidor é classificado como **Retain** entendemos que sua estratégia envolve a não-migração da workload. 
 
 Principalmente isso se dará ao fato de possuir uma função que não seja suportada em nuvem pública (por exemplo um servidor DHCP), ou então uma função que não faça sentido em ir para a nuvem. Por exemplo, dados de backup de curto prazo ou dados de replicação local de servidores, etc.
+
+### Aplicação do Retain em Azure
+Uma vez que o servidor não será migrado para a nuvem Azure, seja por possuir uma função não suportada pelo ambiente ou por possuir uma função que não faça sentido ser migrada, não há o que ser aplicado.
 
 ## Retire
 Diferente da estratégia de Retain, consideramos como **Retire** soluções ou aplicações que definitivamente não fazem sentido migrar para a nuvem ou que já estão marcadas para serem decomissionadas ou descontinuadas. 
