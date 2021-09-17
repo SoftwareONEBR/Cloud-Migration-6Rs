@@ -6,10 +6,10 @@
 
 </h1>
 
-| Autor | Data |
+| Autor(es) | Data |
 | -- | -- |
-| Carlos Oliveira | 09/10/2021|
-| Versão | 1.0 |
+| @carlosdoliveira, @rafaelvelosoAZ, @rezendesfelipe | 09/17/2021|
+| Versão | 2.0 |
 
 ## Escopo
 Este material abrange a estratégia de 6 R's levando-se em consideração uma migração para o **Microsoft Azure**. As informações aqui apresentadas podem se aplicar para outros provedores de cloud, em alguns casos. 
