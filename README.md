@@ -44,16 +44,15 @@ A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas pa
 
 Uma outra situação é quando não se deseja fazer uma restruturação completa da sua aplicação, mas você se dispõe a fazer algumas mudanças para otimizar tempo de gerenciamento. 
 
-Por exemplo, você deseja um serviço de Banco de dados que seja capaz de gerenciar as próprias rotinas de Backup, não depender de patching e update de sistema operacional e, consequentemente otimize 
+Por exemplo, você deseja um serviço de Banco de dados que seja capaz de gerenciar as próprias rotinas de Backup, não depender de patching e update de sistema operacional e, consequentemente otimize toda a operação do banco de dados.
 
 ## Refactor / Re-write / Rearchitect
 Esta abordagem leva em questão uma evolução, aprimoramento ou mesmo re-estruturação completa da aplicação como é hoje. 
 
-Exemplos disso podem ser 
+O objetivo desta abordagem é reimaginar a aplicação sendo arquitetada e desenvolvida usando funcionalidades *cloud-native*. Geralmente há um forte motivador para adicionar funcionalidades, escala ou desempenhos que, de outra forma, seriam muito difíceis de atingir com a aplicação desenvolvida da maneira em que existe hoje.
 
-Re-imagine how the application is architected and developed using cloud-native features. This is driven by a strong business need to add features, scale, or performance that would otherwise be difficult to achieve in the application’s existing environment.
+Outro motivador para esta estratégia é quando você tem um desejo de mover de uma arquitetura monolítica para uma arquitetura orientada a serviços, ou então serverless para aprimorar agilidade ou continuidade de negócios. Esta estratégia tende a ser a mais cara tanto em tempo quanto em pessoas, mas por outro lado também traz muitos benefícios se houver um fit com o tecnologias do mercado.
 
-Are you looking to migrate from a monolithic architecture to a service-oriented (or server-less) architecture to boost agility or improve business continuity? This strategy tends to be the most expensive, but it can also be the most beneficial if you have a good product-market fit.
 
 ## Retain
 Quando um servidor é classificado como **Retain** onde precisamos de uma reflexão maior e que, neste momento a aplicação não está pronta para uma migração.
