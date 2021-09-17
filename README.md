@@ -69,6 +69,4 @@ Diferente da estratégia de Retain, consideramos como **Retire** soluções ou a
 Geralmente esta escolha vem do próprio contratante. Quando se trata de um serviço não suportado pela nuvem (DHCP por exemplo), é comum que se use uma estratégia de **Retire** quando haverá uma descontinuação do ambiente onpremises como um todo. Porque desta maneira, o serviço de fato não será utilizado sob nenhuma circunstância.
 
 ## Replace / Re-purchase
-
-
-
+Também conhecida como *drop-and-shop*, dá a possibilidade de realizar a troca de um produto por outro completamente diferente para a realização de tarefas que precisam ser executadas de imediato ou ainda uma nova forma de comprar um mesmo produto. Podendo ser a mudança de uma solução local para uma solução SaaS ou a substituição do fornecedor. Como, por exemplo, a migração de dados de um sistema de gerenciamento de relacionamento com o cliente (CRM) para o Salesforce.com, um sistema de recursos humanos (RH) para Workday ou um sistema de gerenciamento de conteúdo (CMS) para Drupal. Além disso, é comumente encontrado em bancos de dados, em que se pode optar pela compra da licença do banco de dados por hora do servidor ao invés de um valor fixo inicial de aquisição.
