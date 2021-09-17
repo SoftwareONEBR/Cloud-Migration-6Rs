@@ -56,9 +56,12 @@ Re-imagine how the application is architected and developed using cloud-native f
 Are you looking to migrate from a monolithic architecture to a service-oriented (or server-less) architecture to boost agility or improve business continuity? This strategy tends to be the most expensive, but it can also be the most beneficial if you have a good product-market fit.
 
 ## Retain
-Quando um servidor é classificado como **Retain** entendemos que sua estratégia envolve a não-migração da workload. 
+Quando um servidor é classificado como **Retain** onde precisamos de uma reflexão maior e que, neste momento a aplicação não está pronta para uma migração.
 
-Principalmente isso se dará ao fato de possuir uma função que não seja suportada em nuvem pública (por exemplo um servidor DHCP), ou então uma função que não faça sentido em ir para a nuvem. Por exemplo, dados de backup de curto prazo ou dados de replicação local de servidores, etc.
+Podemos elencar alguns motivos e dentre os principais, temos os seguintes: 
+ * O servidor em questão possuir uma função que não seja suportada em nuvem pública (por exemplo um servidor DHCP), ou então uma função que não faça sentido em ir para a nuvem. Por exemplo, dados de backup de curto prazo ou dados de replicação local de servidores, etc.
+ * Há alguma trava contratual que impeça a migração. Por exemplo, se houve uma renovação do contrato de aluguel de servidores, logo não faz sentido, do ponto de vista financeiro, migrar para a nuvem neste exato momento. 
+ * Foi identificada uma necessidade de refatoração para permitir a viabilidade técnica da mesma para nuvem, porém não há orçamento ou equipe preparada, seja por débito técnico ou alocação, para executar estas mudanças necessárias para migração. Nestes critérios, conseguimos enquadrar que a aplicação em si seguirá uma estratégia de *Retain*. 
 
 ## Retire
 Diferente da estratégia de Retain, consideramos como **Retire** soluções ou aplicações que definitivamente não fazem sentido migrar para a nuvem ou que já estão marcadas para serem decomissionadas ou descontinuadas. 
