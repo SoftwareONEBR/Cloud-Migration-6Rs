@@ -65,6 +65,9 @@ Diferente da estratégia de Retain, consideramos como **Retire** soluções ou a
 
 Geralmente esta escolha vem do próprio contratante. Quando se trata de um serviço não suportado pela nuvem (DHCP por exemplo), é comum que se use uma estratégia de **Retire** quando haverá uma descontinuação do ambiente onpremises como um todo. Porque desta maneira, o serviço de fato não será utilizado sob nenhuma circunstância.
 
+### Aplicação do Retire em Azure
+Uma vez que as soluções ou aplicações não serão migradas para a nuvem Azure, seja por definitivamente não fazer sentido serem migradas para a nuvem, por já estarem marcadas para serem decomissionadas ou descontinuadas ou por escolha do contratante, não há o que ser aplicado.
+
 ## Replace / Re-purchase
 
 
