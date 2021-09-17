@@ -35,12 +35,12 @@ Para um informativo completo de todos os requisitos necessários para Rehosting,
  * [**Quaisquer outros cenários de migração conforme especificados na documentação**](https://docs.microsoft.com/en-us/azure/migrate/migrate-support-matrix-physical-migration) 
 
 ## Replatform
-A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas particularidades exigem que esta estratégia seja adotada. Um servidor sem um sistema operacional suportado, por exemplo, pode se encaixar nesta estratégia. O approach de migração neste caso é preparar uma instância virtual na nuvem pública e realizar uma migração individualiada dos dados. 
+A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas particularidades exigem que esta estratégia seja adotada. Também conhecida como *lift-tinker-and-shift*, tem o objetivo de permitir as primeiras otimizações na nuvem para obter benefícios tangíveis, sem necessariamente haver mudanças significativas na arquitetura da aplicação, geralmente mantendo alguns recursos de computação e rede.
 > ### Exemplo
 > 
 > Uma stack possui 3 servidores Web atrás de um Load Balancer e 2 Bancos de dados Mysql com replicação. O servidor MySQL está rodando e uma CentOS 4.x enquanto o servidor Web é um Servidor Ubuntu 14.04-LTS. 
 > 
-> Para os servidores Web é possível seguir uma estratégia de Rehosting enquanto os servidores CentOS, por não estarem em uma versão compatível, devem receber uma versão mais recente do CentOS em nuvem e os dados do banco de dados devem ser migrados através dos métodos conhecidos de replicação / dump-restore.
+> Para os servidores Web é possível seguir uma estratégia de Rehosting enquanto os servidores CentOS, por não estarem em uma versão compatível, devem receber uma versão mais recente do CentOS em nuvem e os dados do banco de dados devem ser migrados através dos métodos conhecidos de replicação / dump-restore. Por fim, para os servidores com função de balanceamento de carga é possível já tomar proveito de usar uma solução gerenciada, seja de um balanceador de rede padrão (Layer 4) ou um balanceador de carga para aplicação (Layer 7).
 
 Uma outra situação é quando não se deseja fazer uma restruturação completa da sua aplicação, mas você se dispõe a fazer algumas mudanças para otimizar tempo de gerenciamento. 
 
