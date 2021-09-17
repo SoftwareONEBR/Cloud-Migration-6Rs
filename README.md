@@ -16,7 +16,7 @@ Este material abrange a estratégia de 6 R's levando-se em consideração uma mi
 
 ## Rehost
 
-A Estratégia de Rehost, também conhecida como Lift-and-Shift consiste em replicar os servidores selecionados para o ambiente de destino de forma a **agilizar** e **facilitar** o processo de migração. Esta é a estratégia mais comum e a que traz resultados mais rápidos por se tratar de um processo de baixo risco e rápido retorno.
+A Estratégia de Rehost, também conhecida como Lift-and-Shift consiste em migrar os servidores selecionados, mantendo sua configuração e infraestrutura atual (IPs, balanceamento, proxy, entre outros) para o ambiente de destino, de forma a **agilizar** e **facilitar** o processo de migração. Esta é a estratégia mais comum e a que traz resultados mais rápidos por se tratar de um processo de baixo risco e rápido retorno.
 
 Algumas premissas são exigidas para que a estratégia de rehosting seja considerada. Para estar elegível a estratégia de *rehosting*, o servidor deve:
 
