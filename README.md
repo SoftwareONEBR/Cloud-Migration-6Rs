@@ -36,7 +36,9 @@ Para um informativo completo de todos os requisitos necessários para Rehosting,
 
 ## Replatform
 A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas particularidades exigem que esta estratégia seja adotada. Um servidor sem um sistema operacional suportado, por exemplo, pode se encaixar nesta estratégia. O approach de migração neste caso é preparar uma instância virtual na nuvem pública e realizar uma migração individualiada dos dados. 
-> ### Exemplo
+
+### Aplicação do Replatform em Azure
+> #### Exemplo 01
 > 
 > Uma stack possui 3 servidores Web atrás de um Load Balancer e 2 Bancos de dados Mysql com replicação. O servidor MySQL está rodando e uma CentOS 4.x enquanto o servidor Web é um Servidor Ubuntu 14.04-LTS. 
 > 
@@ -44,7 +46,8 @@ A estratégia de **Replatform** é similar ao *lift-and-shift* porém algumas pa
 
 Uma outra situação é quando não se deseja fazer uma restruturação completa da sua aplicação, mas você se dispõe a fazer algumas mudanças para otimizar tempo de gerenciamento. 
 
-Por exemplo, você deseja um serviço de Banco de dados que seja capaz de gerenciar as próprias rotinas de Backup, não depender de patching e update de sistema operacional e, consequentemente otimize 
+> #### Exemplo 02
+> Você deseja um serviço de Banco de dados que seja capaz de gerenciar as próprias rotinas de Backup, não depender de patching e update de sistema operacional e, consequentemente otimizar o tempo de gerencamento do banco de dados da sua aplicação. Para este tipo de situação, uma instância do SQL Server no Azure poderá resolver o seu problema substituindo o banco de dados anterior que não tinha nenhuma dessas funções.
 
 ## Refactor / Re-write / Rearchitect
 Esta abordagem leva em questão uma evolução, aprimoramento ou mesmo re-estruturação completa da aplicação como é hoje. 
