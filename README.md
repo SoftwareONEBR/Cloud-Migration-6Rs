@@ -47,13 +47,19 @@ Uma outra situação é quando não se deseja fazer uma restruturação completa
 Por exemplo, você deseja um serviço de Banco de dados que seja capaz de gerenciar as próprias rotinas de Backup, não depender de patching e update de sistema operacional e, consequentemente otimize 
 
 ## Refactor / Re-write / Rearchitect
-Esta abordagem leva em questão uma evolução, aprimoramento ou mesmo re-estruturação completa da aplicação como é hoje. 
+Esta abordagem leva em questão uma evolução, aprimoramento ou mesmo a re-estruturação completa da aplicação em relação a como ela é hoje. No Refactor / Re-write / Rearchitect você não vai simplesmente tentar encaixar a arquitetura da aplicação atual na nuvem, mas sim fazer uma rearquitetura; adotar os serviços gerenciados que o provedor de nuvem fornece.
 
-Exemplos disso podem ser 
+Neste R, repensa-se como o aplicativo é arquitetado e desenvolvido usando recursos nativos da nuvem. Isso acontece devida a uma forte necessidade de negócios de adicionar recursos, escalar recursos ou aprimorar o desempenho da aplicação que, de outra maneira, seria dificilmente alcançável tendo em vista o seu ambiente existente.
 
-Re-imagine how the application is architected and developed using cloud-native features. This is driven by a strong business need to add features, scale, or performance that would otherwise be difficult to achieve in the application’s existing environment.
+Você quer migrar de uma arquitetura monolítica para uma arquitetura orientada a serviços (ou serverless) para aumentar a agilidade ou melhorar a continuidade dos negócios? Essa estratégia tende a ser a mais cara, mas também pode ser a mais benéfica se você tiver uma boa adequação do produto ao mercado.
 
-Are you looking to migrate from a monolithic architecture to a service-oriented (or server-less) architecture to boost agility or improve business continuity? This strategy tends to be the most expensive, but it can also be the most beneficial if you have a good product-market fit.
+### Aplicação do Refactor / Re-write / Rearchitect em Azure
+
+* Mudar a arquitetura de um servidor web, adicionando um Azure Load Balancer na frenter do servidor ao invés de deixá-lo exposto à web;
+
+* Refatorar a aplicação para que ela rode em uma Instância de Contêiner do Azure ao invés de rodar em uma máquina virtual, garantindo a "portabilidade" da aplicação para outros ambientes;
+
+* Adotar premissas de computação serverless com o Azure Functions ou Azure Logic Apps.
 
 ## Retain
 Quando um servidor é classificado como **Retain** entendemos que sua estratégia envolve a não-migração da workload. 
